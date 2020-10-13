@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width; initial-scale=1.0"><!-- para que ocupe la ventana del dispositivo al 100% al inicio -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta lang="es">
+        <title> Frankfurt - Población </title> <!-- Titulo de la pagina --> 
+        <meta name="author" content="Santiago Martin"> <!-- autor --> 
+        <meta name="robots" content="index, follow"> <!--  --> 
+        <meta name="keywords" content="Frankfurt, Alemania"> <!-- palabras claves para navegador --> 
+        <meta name="description" content="Sitio web sobre la población de de Frankfurt."> <!-- descripción de la pagina --> 
+        <link href="estilos.css" rel="stylesheet" type="text/css"> <!-- declarando hoja de estilos --> 
+    </head>
+    
+    <body id="bg_po"> <!-- dando identificador al body de esta pagina --> 
+    <header class="navbar" id="navbar-header"> <!-- creando cabecera -->  
+        <div class="contenedor"> <!-- div para menu -->  
+            <h2><a href="index.html" class="home">Home</a></h2>  <!-- boton de home-->  
+            
+            <!--botones para menu de celular -->
+            <a href="#navbar-header" class="navbar-menu-mobile open"><img src="iconos/open.png" width="40px"/></a>
+            <a href="#" class="navbar-menu-mobile close"><img src="iconos/close.png" width="40px"/></a>
+        </div>
+            <!-- ----------------------- Menu ----------------------------------- -->
+            <nav class  ="menu">                
+                <a href="ubicacion.html">Ubicación</a>
+                <a href="poblacion.html">Población</a>
+                <a href="actividades.html">Actividades</a>
+                <a href="historia.html">Historia</a>
+                <a href="referencias.html">Referencias</a>
+             </nav>     
+            <!-- ----------------------- Menu ----------------------------------- -->
+          
+	</header>
+        
+    <div class="title_population"> <!-- Creando div para la portada de pagina --> 
+        <h3>Para 2019 habian</h3> <!-- creando subtitulo--> 
+        <img src="Imagenes/titulo-poblacion.png"> <!-- Insertando imagen con titulo--> 
+        <h2>Frankforteses!</h2> <!-- creando subtitulo --> 
+        <p>Con más de 753.000 habitantes, Frankfurt am Main ocupa la <span>quinta posición</span> entre las <span>ciudades más pobladas</span> de Alemania. Además casi un 30% de su población son extranjeros, por lo que se le conoce como <span>la ciudad más internacional</span> de Alemania.</p> <!-- insertando parrafo --> 
+    </div>
+    
+    <!-- creando boton para llevar a más contenido --> 
+    <a href="#mas"> 
+        <img class="more" src="iconos/VerMas.png" width="130px" height="115px"/>    
+    </a>
+        
+    <!-- Sección personas famosas -->    
+    <section class="info-poblacion">
+        <a name="mas" id="jump-more"></a> <!-- vinculo para más contenido --> 
+        <h1>Frankforteses Famosos!</h1> <!-- creando titulo --> 
+        <!-- Se crean tablas para distribuir el contenido --> 
+        <table> 
+            <tr>
+                <td> <!-- columna para titulo e información --> 
+                    <h2>Ana Frank</h2>
+                    <p> Ana Frank era una niña judía alemana y víctima del Holocausto que se escondió de los nacionalsocialistas con su familia en un edificio trasero en Amsterdam, fue deportada poco antes del final de la guerra, y cuya historia se dio a conocer a través de su diario publicado por su padre Otto Frank.</p>
+                    <a href="https://es.wikipedia.org/wiki/Ana_Frank" target="_blank">Ver más</a>
+                </td>
+                <td> <!-- columna para imagen --> 
+                    <img src="Imagenes/Anne_Frank.jpg"/>
+                </td>
+            </tr>
+        </table>
+        <!-- se repite el mismo procedimiento para los demas personajes --> 
+        <table>
+            <tr>
+                <td>
+                    <img src="Imagenes/otto.jpg"/>
+                </td>
+                <td>
+                    <h2>Olto Hahn</h2>
+                    <p> Otto Hahn fue un químico alemán y pionero de la radioquímica que descubrió los primeros núcleos isoméricos ("Uran Z") en 1921 y, junto con Fritz Straßmann, la fisión nuclear del uranio en 1938 y fue galardonado con el Premio Nobel de Química de 1944 por su investigación.</p>
+                    <a href="https://es.wikipedia.org/wiki/Otto_Hahn" target="_blank">Ver más</a>
+                </td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td>
+                    <h2>Johann Wolfgang von Goethe</h2>
+                    <p> Johann Wolfgang von Goethe fue un famoso poeta y escritor alemán que, como representante de los clásicos de Sturm und Drang y Weimar, escribió obras como "Götz von Berlichingen" (1773), "Los dolores del joven Werther" (1774) y "Fausto" (1806). / 1832) y se hizo un nombre como científico y político.</p>
+                    <a href="https://es.wikipedia.org/wiki/Johann_Wolfgang_von_Goethe" target="_blank">Ver más</a>
+                </td>
+                <td>
+                    <img src="Imagenes/goethe.jpg"/>
+                </td>
+            </tr>
+        </table>
+    </section>
+        
+    <!-- Pie de Página --> 
+    <footer>
+        <h6>&copy; Santiago Martin 2020</h6><!-- texto pequeño con caracter especial -->         
+    </footer>    
+    </body>
+
+</html>

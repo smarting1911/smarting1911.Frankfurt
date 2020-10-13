@@ -1,0 +1,1257 @@
+/* Importando Fuente */
+@font-face {
+    font-family: Agency; /* Nombre que se le dara a la fuente en la hoja de estilos */
+    src: url('fuentes/agency-fb.ttf'); /* Ubicación del archivo */
+}
+
+@font-face {
+    font-family: GoodDog;
+    src: url('fuentes/GOODDC__.TTF');
+}
+
+@font-face {
+    font-family: GoodDog2;
+    src: url('fuentes/GOODDP__.TTF');
+}
+
+/* Estableciendo fondo */
+body{
+    margin:0px 0px 0px 0px; /* Quitando el margin para que la imagen ocupe toda la pantalla */
+    padding: 0px 0px 0px 0px; /* Quitando el padding para que la imagen ocupe toda la pantalla */
+    background-image: url(Imagenes/bg_Index.jpg);/* Insertando imagen */
+    background-position: center top; /* centrando imagen */
+    background-size:  1530px; /* estableciendo tamaño de la imagen */
+    background-attachment: fixed; /* fijando la imagen para que no se mueva al hacer scroll */
+}
+
+/* Estableciendo estilo base para titulos h1 */
+h1{
+    font-family: GoodDog2; /* tipo de letra */
+    text-align: center; /* alineación (centrado) */
+    font-size: 3.5em; /* estableciendo Tamaño */
+    color:dimgrey; /* estableciendo color de fuente */
+    padding-top: 20px; /* dando padding superior */
+}
+
+
+/* Estableciendo estilo base para parrafos */
+p{
+    color:#ffffff; /* color blanco */
+    font-family: Agency; /* tipo de letra */
+}
+
+/* Estableciendo estilo para los span */
+span{
+    color:#00ffff; /* color azul */
+}
+
+/* Estableciendo estilo base para enlaces */
+a{
+    color:#000; /* color negro */
+    font-family: Agency; /* tipo de letra */
+    text-decoration: none; /* quitando decoración (sin subrallado) */
+}
+
+/* Estilo del pie de pagina */
+footer{
+    position: fixed; /* fijando en una posición en la pantalla*/
+    right: 25px; /* posición con respecto al borde derecho */
+    bottom: 0px; /* posición respecto al borde inferior */
+    color: #fff;
+}
+
+/* estilo para textos del tipo h6, para pie de pagina */
+h6{
+    font-size: 12px; /* dando tamaño */
+    color: #ff0;
+}
+
+/* Cambiando fondo para cada pagina */
+#bg_ub{
+    background-image: url(Imagenes/bg_location.jpg); /* indicando ubicacion de la nueva imagen */
+    background-size: 1280px; /* estableciendo tamaño */
+}
+
+#bg_po{
+    background-image: url(Imagenes/bg_population.jpg);
+    background-size:  1545px;
+
+}
+
+#bg_ac{
+    background-image: url(Imagenes/bg_activities.jpg);
+
+}
+
+#bg_hi{
+    background-image: url(Imagenes/bg_history.jpg);
+}
+
+#bg_ref{
+    background-image: url(Imagenes/REF.jpg);
+}
+
+
+/* estilo para enlace de inicio*/
+#inicio{
+    position: absolute; /* se usa posicionmiento absoluto para ubicar al inicio de la pagina*/
+    top: 0px;
+}
+
+/* estilo contenedor del menu */
+.contenedor{
+    position: absolute;
+    width: 100px; /* ancho de 100 pixeles */
+}
+
+.navbar-menu-mobile{
+    display: none;
+}
+
+/* estilo cabecera */
+header {
+    width: 100%; /* ancho de toda la pantalla */
+    height: 4.5rem;
+    background: rgba(0,0,0,0.3); /* color de fondo blanco con una opacidad del 30% */
+    position:fixed; /* se fija la posición */
+    top: 0;
+    left: 0;
+    z-index: 100; /* se ubica por encima de todo */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2); /* se le pone una sombra al encabezado */
+}
+
+/* tamaño del contenedor */
+header .contenedor{
+    height: 4.5rem;
+    margin: auto;
+}
+
+header h2{
+    margin:0 0 0 0; /* se quita el margin para los textos h2 del menu */
+}
+
+/* estilo para enlaces del menu */
+header a{
+    font-size: 2.6rem;
+    font-weight: initial; /* se deja sin negrilla */
+    font-family: GoodDog;
+    color: #ff0;
+    float: left; /* que floten hacia la izquierda*/
+    text-decoration: none; 
+    padding: 10px 20px 10px 20px;
+    border: none; /* se le quita el borde */
+}
+
+/* acción a realizar al arrastrar el mouse por encima de los enlaces del menu*/
+header a:hover{
+    transform: scale(1.2) rotate(-15deg); /* se agrandan y giran un poco */
+    color: deepskyblue; /* cambia el color */
+}
+
+/* estilo del menu */
+.menu{ 
+    width: auto; /* el ancho se ajusta automaticamente dependiendo la cantidad de botones*/
+    height: 4.5em;
+    display: flex;
+    float: right;
+    z-index: 101; /* se pone por encima de todo */
+}
+
+/* estilo botones del menu */
+.menu a {
+    height: auto; /* el alto del boton se ajusta segun el texto */
+    font-family: Agency;
+    font-size: 1.4em;
+    padding: 20px 20px 10px 20px; /* se establece el valor de padding para que el texto no quepa apenas en el boton */
+    text-decoration: none;
+    border: none;
+    transition: 0.5s; /* tiempo para completar las transformaciones, como las que se realizan al hacer hover*/
+}
+
+/* acciones a realizar al hacer hover, estos botones haran estas acciones y no las anteriores ya que este estilo se declaro más abajo. */
+.menu a:hover{
+    color: deepskyblue; /* Cambio de color de fuente */
+    background: rgba(0, 0,0,0.8); /* opacidad al 80%*/
+    transform: scale(1); /* no cambiar de tamaño ni rotar*/
+}
+
+/* estilo portada de index */
+.title{
+    width: 100vw; /* ancho del tamaño del ancho de la ventana */
+    height: 100vh; /* alto del alto de la ventana*/
+}
+
+/* estilo imagen con titulo del index*/
+.title img{
+    position: absolute; /* posicionamiento abaoluto */
+    /* se acomoda en la mitad de la ventana */
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -40%) scale(0.75); /* se centra y se escala */
+}
+
+
+/* -----------------------------estilo botones menu auxiliar del index ----------------------------------------*/
+.title #ubicacion{
+    width: 98px; /* tamaño del boton */
+    height: 86px;
+    position: absolute; /* posicionamiento absoluto */
+    top:50%;
+    left:50%;
+    transform: translate(-90%, 130%); /* se traslada el boton a la ubicación deseada */
+    background-image: url(iconos/ubicacion_off.png); /* se coloca de fondo el icono del boton apagado */
+    background-size: 64px 64px; /* tamaño de la imagen de fondo */
+    background-repeat: no-repeat; /* se establece q no se repita el fondo */
+    background-position: center top; /* alineando imagen */
+    visibility: visible; /* se hace visible el boton */
+}
+
+.title #ubicacion:hover{
+    background-image: url(iconos/ubicacion_on.png); /* al hacer hover se cambia la imagen de fondo por el icono del boton encendido*/
+    background-size:100%; /* se hace que el fondo rellene por completo el fondo*/
+}
+
+
+/* Se repite el mismo proceso que para el boton de ubicación */
+.title #poblacion{
+    width: 98px;
+    height: 86px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-20%, 130%);
+    background-image: url(iconos/poblacion_off.png);
+    background-size: 64px 64px;
+    background-repeat: no-repeat;
+    background-position: center top;
+    visibility: visible;
+}
+
+.title #poblacion:hover{
+    background-image: url(iconos/poblacion_on.png);
+    background-size:100%;
+}
+
+.title #actividades{
+    width: 98px;
+    height: 86px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(50%, 130%);
+    background-image: url(iconos/actividades_off.png);
+    background-size: 64px 64px;
+    background-repeat: no-repeat;
+    background-position: center top;
+    visibility: visible;
+}
+
+.title #actividades:hover{
+    background-image: url(iconos/actividades_on.png);
+    background-size:100%;
+}
+
+.title #historia{
+    width: 98px;
+    height: 86px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(120%, 130%);
+    background-image: url(iconos/historia_off.png);
+    background-size: 64px 64px;
+    background-repeat: no-repeat;
+    background-position: center top;
+    visibility: visible;
+}
+
+.title #historia:hover{
+    background-image: url(iconos/historia_on.png);
+    background-size:100%;
+}
+
+.title #referencias{
+    width: 98px;
+    height: 86px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(190%, 130%);
+    background-image: url(iconos/referencias_off.png);
+    background-size: 64px 64px;
+    background-repeat: no-repeat;
+    background-position: center top;
+    visibility: visible;
+}
+
+.title #referencias:hover{
+    background-image: url(iconos/referencias_on.png);
+    background-size:100%;
+}
+
+/* -----------------------------estilo botones menu auxiliar del index ----------------------------------------*/
+
+/* estilo boton de ver mas */
+.more{
+    position: absolute;
+    top: 560px; /* distancia al borde superior */
+    left: 50%;
+    transform: translate(-50%) scale(0.75); /* se ubica y se escala */
+    opacity: 0.5; /* opacidsad al 50% */
+} 
+
+.more:hover{
+    opacity: 1; /* al hacer hover opacidad al 100% */
+}
+
+
+/* estilo portada pagina poblacion */
+.title_population{
+    width: 100vw;
+    height: 100vh;
+}
+
+/* Estilo imagen con numero de habitantes */
+.title_population img{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    animation: bigger_smaller 4s infinite; /* Se lleva a cabo la animación bigger_smaller que dure 4 seguntos y se repite */
+}
+
+/* creando cuadros de la animacion bigger_smaller */
+@keyframes bigger_smaller{
+    0%{transform: scale(0.45) translate(-155%, -85%);} /* al 0% de la animación la imagen esta en la posicion y tamaño original*/
+    8%{transform: scale(0.47) translate(-147%, -85%);} /* al 8% se agranda y traslada un poco a la izquierda */
+    16%{transform: scale(0.45) translate(-155%, -85%);} /* al 16% vuelve al estado original */
+    24%{transform: scale(0.47) translate(-147%, -85%);} /* al 24% se vuelve a agrandar y desplazar */
+    32%{transform: scale(0.45) translate(-155%, -85%);} /* al 32% vuelve al estado original */
+    100%{transform: scale(0.45) translate(-155%, -85%);} /* espera en ese estado hasta que se cumplan los 4 segundos*/
+}
+
+/* estilo para titulo h3 de portada de poblacion */
+.title_population h3{
+    color:#ffffff;
+    font-family: GoodDog2;
+    font-size: 30px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-220%, -260%);
+    font-weight: normal;
+}
+
+/* estilo para titulo h2 de portada de población*/
+.title_population h2{
+    color:#ffffff;
+    font-family: GoodDog2;
+    font-size: 35px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-90%, 150%);
+    font-weight: normal;
+}
+
+/* estilo para parrafo en portada de población*/
+.title_population p{
+    width: 250px;
+    font-size: 18px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(25%, -40%);
+    font-weight: normal;
+}
+
+/* estilo para portada de actividades */
+.title_activities{
+    width: 100vw;
+    height: 100vh;
+}
+
+/* estilo para imagen de mapa de actividades*/
+.title_activities img{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform:  translate(-50%, -30%) scale(0.8);
+}
+
+/* estilo para imagen titulo de titulo de portada de actividades*/
+#explore{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform:  translate(-80%, -150%) scale(0.8);
+}
+
+/* estilo para texto con intrucción de portada de actividades*/
+.title_activities p{
+    width: 200px;
+    font-size: 25px;
+    text-align: center; /* alineacion del texto centrado */
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(25%, -400%);
+    font-weight: normal;
+}
+
+/* marging para las secciones en actividades*/
+#bg_ac section{
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+/*posicionando enlaces internos*/
+#jump-ref{
+    position: relative;
+    top:-150px;
+}
+
+/*---------------------------------- estilo botones de actividades ---------------------------------------*/
+#hauptbahnhof{
+    width: 183px;
+    height: 133px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-176%, 70%) scale(0.8); /* se ubica y escala */
+    background-image: url(iconos/estacion_off.png); /* fondo con imagen de boton en off */
+    background-size: 124px 61px; /* se establece tamaño de fondo */
+    background-repeat: no-repeat; /* se indica que el fondo no se repita */
+    background-position: center bottom; /* se alinea el fondo */
+    visibility: visible; 
+}
+
+#hauptbahnhof:hover{
+    background-image: url(iconos/estacion_on.png); /* se cambia fondo a imagen del boton en on al hacer hover */
+    background-size:100%; /* se hace que el fondo llene el boton */
+    transform: translate(-176%, 70%) scale(0.85); /* se ubica y re escala el boton para que parezca que sigue en el mismo sitio */
+}
+
+/* se repite el mismo procedimiento del boton hauptbahnhof para cada boton*/
+#oper{
+    width: 181px;
+    height: 144px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-150%, -70%) scale(0.8);
+    background-image: url(iconos/opera_off.png);
+    background-size: 124px 61px;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    visibility: visible;
+}
+
+#oper:hover{
+    background-image: url(iconos/opera_on.png);
+    background-size:100%;
+    transform: translate(-150%, -70%) scale(0.85);
+}
+
+#museum{
+    width: 160px;
+    height: 142px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-100%, 100%) scale(0.8);
+    background-image: url(iconos/museo_off.png);
+    background-size: 124px 61px;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    visibility: visible;
+}
+
+#museum:hover{
+    background-image: url(iconos/museo_on.png);
+    background-size:100%;
+    transform: translate(-100%, 100%) scale(0.85);
+}
+
+#zoo{
+    width: 160px;
+    height: 142px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(90%, -50%) scale(0.8);
+    background-image: url(iconos/zoologico_off.png);
+    background-size: 124px 61px;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    visibility: visible;
+}
+
+#zoo:hover{
+    background-image: url(iconos/zoologico_on.png);
+    background-size:100%;
+    transform: translate(90%, -50%) scale(0.85);
+}
+
+#romer{
+    width: 181px;
+    height: 142px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, 10%) scale(0.8);
+    background-image: url(iconos/romer_off.png);
+    background-size: 124px 61px;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    visibility: visible;
+}
+
+#romer:hover{
+    background-image: url(iconos/romer_on.png);
+    background-size:100%;
+    transform: translate(-50%, 10%) scale(0.85);
+}
+
+#tower{
+    width: 125px;
+    height: 174px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-140%, -25%) scale(0.8);
+    background-image: url(iconos/torre_off.png);
+    background-size: 124px 61px;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    visibility: visible;
+}
+
+#tower:hover{
+    background-image: url(iconos/torre_on.png);
+    background-size:100%;
+    transform: translate(-140%, -25%) scale(0.85);
+}
+
+#steg{
+    width: 168px;
+    height: 153px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-10%, 40%) scale(0.8);
+    background-image: url(iconos/puente_off.png);
+    background-size: 124px 61px;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    visibility: visible;
+    z-index: 10;
+}
+
+#steg:hover{
+    background-image: url(iconos/puente_on.png);
+    background-size:100%;
+    transform: translate(*10%, 40%) scale(0.85);
+}
+
+/*------------------------------------ estilo botones actividades -------------------------------------------- */
+
+
+/* estilo portada ubicación */
+/* estilo imagen de portada*/
+.title_location img{
+    position: absolute; /* posicionamiento absoluto */
+    width:100vw; /* ancho del tamaño de la ventana */
+    height: 400px; /* se establece el alto de la imagen*/
+    /* se centra la imagen, con origen en la esquina superior izquierda */
+    top:50%;
+    left: 50%;
+    background-image: url(Imagenes/location1.png); /* se coloca la imagen de fondo que aparecera cuando no se pasa el mouse por encima */
+    background-size: 294px 400px; /* tamaño del fondo */
+    background-repeat: no-repeat; /* se indica que no se repita */
+    background-position: center; /* se centra en el recuadro */
+    transform: translate(-50%,-50%); /* se centra respecto al centro de la imagen */
+    transition: 1s; /* se establece que las transformaciones se hagan en 1 segundo */
+}
+
+.title_location img:hover{
+    background-image: url(Imagenes/location2.png); /* se indica la imagen a mostrar al hacer hover */
+    background-size: 606px 400px; /* se ajusta el tamaño para la nueva imagen */
+}
+
+/* estilo boton a maps */
+.title_location a{
+    color: #0ff;
+    border: 2px solid #0ff; /* se establece un borde de color azul y 2 pixeles de ancho */
+    border-radius: 5px 5px 5px 5px; /* se redondean los bordes del boton */
+    font-family: Agency; 
+    font-size: 25px;
+    text-decoration: none;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(100%,0%);/*se ubica el boton en la posición deseada */
+    padding: 5px 5px 5px 5px;
+}
+
+
+.title_location a:hover{
+    background-color: #0ff; /* al hacer hover el fondo se pone azul*/
+    color: #000; /* la letra cambia a negro */
+}
+
+/* estilo portada de historia */
+.title_history{
+    width:100%;
+    height: 100vh;;
+    margin: auto;
+    margin-top: 70px;
+    position:relative;
+    overflow: hidden; /* se oculta cualquier objeto que se salga del div */
+}
+
+/* estilo imagen linea de tiempo */
+.title_history img{
+    position: absolute;
+    top: 425px;
+    left: 50%;
+    transform: translate(-50%,-50%)
+}
+
+/* se ubica y escala titulo de portada*/
+#explora{
+    transform: translate(-52%,-125%) scale(0.6);
+}
+
+/* estilo de los parrafos en la portada de historia */
+.title_history p{
+    border: 2px solid #0ff;
+    width: 96px;
+    height: 80px;
+    text-align: center;
+    margin: auto;
+    background: rgba(0,0,0,0.5);
+}
+
+/* estilo texto indicativo, se ubica y da tamaño deseado*/
+#indicacion{
+    border: none;
+    background: rgba(0,0,0,0);
+    width: auto;
+    height: auto;
+    font-size: 20px;
+    margin-top: 280px
+}
+
+/* estilo botones en la portada de historia */
+.title_history a{
+    background: #0ff;
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px 5px 5px 5px; /* bordes redondeados */
+    position: absolute;
+    top: 0;
+    left:25px;
+}
+
+/* se da estilo a los div que permitiran hacer animación al activar los botones */
+.title_history div{
+    width:100px;
+    height: 100px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    overflow: hidden; /* se ocultan los objetos por fuera del div */
+}
+
+/* ------------------- Se ubica el div para cada uno de los botones ------------------------------ */
+.content-1{
+    transform: translate(-330%,-42%);
+}
+
+.content-2{
+    transform: translate(-288%,80%);
+}
+
+.content-3{
+    transform: translate(-120%,-42%);
+}
+
+.content-4{
+    transform: translate(-70%,80%);
+}
+
+.content-5{
+    transform: translate(5%,-42%);
+}
+
+.content-6{
+    transform: translate(88%,80%);
+}
+
+.content-7{
+    transform: translate(132%,-42%);
+}
+
+.content-8{
+    transform: translate(175%,80%);
+}
+
+.content-9{
+    transform: translate(215%,-42%);
+}
+
+/*---------------------------------------- Se ubica el div para cada boton ----------------------------------------------*/
+
+/* se ubican botones de la parte superior de la flecha */
+.content-1 a, .content-3 a, .content-5 a, .content-7 a, .content-9 a{
+    top: 62px;
+}
+
+/* se sacan los parrafos del div para que no se vean */
+.content-1 p, .content-3 p, .content-5 p, .content-7 p, .content-9 p{
+    margin-top: 100px;
+}
+
+/* se transportan los parrafos adentro del div para que se visualicen y el tiempo para esto es de medio seg */
+.content-1:hover p, .content-3:hover p, .content-5:hover p, .content-7:hover p, .content-9:hover p{
+    transition: 0.5s;
+    transform: translate(0,-100px);
+}
+
+/* se ajusta el alto de los div inferiores */
+.content-2, .content-4, .content-6, .content-8{
+    height: 110px;
+}
+
+/* se sacan los parrafos de los div para que no se vean y se ajustan algunos aspectos del estilo*/
+.content-2 p, .content-4 p, .content-6 p, .content-8 p{
+    margin-top: -100px;
+    padding-top: 25px;
+    height: 60px;
+}
+
+/*al hacer hover los parrafos ingresan al div */
+.content-2:hover p, .content-4:hover p, .content-6:hover p, .content-8:hover p{
+    transition: 0.5s;
+    transform: translate(0,110px);
+}
+
+/* estilo de las secciones de información*/
+section{
+    width: 80%;
+    height:auto;
+    background-image: url(Imagenes/bg-section.png); /* imagen de fondo para las secciones */
+    border-radius: 30px; /* se redondean las esquinas del fondo */
+    background-size: 1200px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+/* estilo de las tablas */
+table{
+    margin:0px 100px 0px 100px;
+}
+
+/* estilo de las columnas */
+table tr td{
+    width: 50%;
+    padding: 25px;
+}
+
+/* estilo de las columnas para pantallas menores a 800px */
+ @media only screen and (max-width: 900px){
+    table tr td{
+        width: 80%;
+        float: left; /* las columnas flotaran a la izquierda */
+    }
+}
+
+/* estilo titulos h2 en las secciones */
+section h2{
+    font-family: GoodDog2;
+    font-size: 2.6em;
+    text-align: center;
+    background-color: dimgrey;
+    color:#ff0;
+    border-radius: 50px;
+}
+
+/* estilo de las imagenes en las secciones */
+section img{
+    width: 100%;
+    object-fit: cover; /* rellenan todo el contenedor */
+    border-radius: 10px; /* se redondean las esquinas*/
+}
+
+/* estilos parrafos de secciones */
+section p{
+    background-color: #fff;
+    color:grey;
+    text-align: justify;
+    font-size: 20px;
+    text-align: center;
+}
+
+/* separacion entre secciones */
+.info-historia-2{
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+/* estilo botones en secciones */
+section a{
+    color: #000;
+    border: 2px solid #0ff;
+    border-radius: 5px 5px 5px 5px;
+    font-family: Agency;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 5px 5px 5px 5px;
+    position: relative;
+    left:45%;
+}
+
+/* se cambia el color de fondo y de fuente al hacer hover */
+section a:hover{
+    border:none;
+    background-color: #0ff;
+    color: #000;
+}
+
+/* estilo secciones con video */
+.video{
+    width: 600px;
+    height: 355px;
+    padding: 50px;
+    margin-bottom: 100px;
+}
+
+/* Se ocultan los enlaces que permiten saltar dentro de la pagina */
+.video a, .info-historia-2 .jump, .info-historia-1 .jump, .info-poblacion #mas{
+    visibility:hidden 
+}
+
+/* estilo del video */
+.video iframe{
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%)
+}
+
+/* estilo portada referencias */
+.title-reference{
+    width: 100vw;
+    height: 100vh;
+}
+
+/* estilo de los div de los botones */
+.title-reference div{
+    width:200px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+/* ------------------ ubicando los botones de referencias -------------------- */
+.menu_ref-1{
+    transform: translate(-160%,-50%) scale(1);
+}
+
+.menu_ref-2{
+    transform: translate(-50%,-50%) scale(1);
+}
+.menu_ref-3{
+    transform: translate(60%,-50%) scale(1);
+}
+/*---------------------- ubicando los botones de referencias ---------------- */
+
+/* imagenes de botones en off se hacen visibles */
+.off{
+    position: absolute;
+    visibility: visible; 
+}
+
+/* imagenes de botones en on se dejan invisibles */
+.on{
+    position: absolute;
+    visibility: hidden; 
+}
+
+/* al hacer hover las imagenes de off se desaparecen */
+.title-reference div:hover .off{
+    visibility: hidden;
+}
+
+/* al hacer hover las imagenes de on aparecen */
+.title-reference div:hover .on{
+    visibility: visible;
+}
+
+/* estilo secciones de referencias de info y de imagenes */
+.content-ref-1, .content-ref-2{
+    width: 50%;
+    height: auto;
+    margin-top: 250px;
+}
+
+/* se quita el borde a las referencias */
+.content-ref-1 a, .content-ref-2 a{
+    border: none;
+}
+
+.content-ref-3{
+    position: relative;
+    width: 50%;
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+
+/* se ubica y da color de fondo a los botones de volver*/
+.back{
+    background-color: #ff0;   
+    top:10px;
+}
+
+/* al hacer hover cambia el color de fondo de los botones de volver*/
+.back:hover{
+    background-color: #0ff;
+}
+
+/* estilo titulos h2 en secciones de referencia*/
+#bg_ref section h2{
+    font-family: GoodDog2;
+    text-align: center;
+    font-size: 2.5em;
+    color:dimgrey;
+    padding-top: 20px;
+    color:#ff0;
+}
+
+/* estilo de las listas */
+section ul{
+    position: relative;
+    width: 200px;
+    left: 50%;
+    transform: translate(-75%);
+}
+
+/*estilo items de lista*/
+section ul li{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#jump-more{
+    visibility: hidden;
+}
+
+
+/* -------------------estilo para el celular -------------------*/
+/*----------- Se escalan y reposicionan los objetos -----------*/
+@media only screen and (max-width: 680px) { 
+     
+     /* ------------------- Menu desplegable -------------------*/
+     /* ------------------- ajustando header -------------------*/
+     .contenedor{
+         width: 100%;
+         position: relative;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         background: rgba(50,50,50,1); 
+     }
+     
+     /* ------------------- estilo menu de navegacion -------------------*/
+     .menu{
+         position: absolute;
+         background: rgba(50,50,50,1); 
+         width: 100%;
+         top: 71px;
+         height: auto;
+         display: flex; /* permite acomodar de mejor manera los botones*/
+         justify-content: space-around; /* distribuye los botones en el menu*/
+         align-items: center;
+         flex-direction: column; /* direccion en la que se acomodn los botones, vertical */
+         height: 0px; /* altura cero para que este cerrado inicialmente */
+         overflow: hidden; /* oculta los botones*/
+         transition: height 0.5s ease; /* anima la transmision y permite que el cambio no sea tan brusco */
+     }
+     
+     .menu a{
+         width: 100%;
+         text-align: center;
+         float: none;
+         padding-bottom: 15px;
+     }
+     
+     /* desplegar el menu cuando se active un href a navbar*/
+     #navbar-header:target .menu{
+         height: 310px; /* tamaño del menu desplegable */
+         border-top: 1px solid #ff0; /* se agrega una linea en la parte superior al desplegar el menu */
+     }
+     
+     .open{
+         display: flex; 
+     }
+     
+     /* esconder el icono de menu al activarlo*/
+     #navbar-header:target .open{
+         display: none;
+     }
+     
+     .close{
+         display: none; /* boton de cerrar inicialmente invisible*/
+     }
+     
+     /* mostrar icono de cerrar al desplegar el menu*/
+    #navbar-header:target .close{
+         display:flex;
+     }
+     
+    
+    .title img{
+    position: absolute; /* posicionamiento abaoluto */
+    /* se acomoda en la mitad de la ventana */
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.5); /* se centra y se escala */
+     }
+     
+     /* reubicando botones de menu auxiliar*/
+     .title #ubicacion{
+         transform: translate(-160%, 100%) scale(1);
+     }
+     
+     .title #poblacion{
+         transform: translate(-90%, 100%) scale(1);
+     }
+     
+     .title #actividades{
+         transform: translate(-20%, 100%) scale(1);
+     }
+     
+     .title #historia{
+         transform: translate(50%, 100%) scale(1);
+     }
+     
+     .title #referencias{
+         transform: translate(120%, 100%) scale(1);
+     }
+     
+     /* reubicando titulo de poblacion*/
+    .title_population p{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,30%);
+    }
+     
+    /* ajustando animacion al nuevo tamaño y posicion del titulo*/
+    @keyframes bigger_smaller{
+    0%{transform: scale(0.45) translate(-110%, -155%);} /* al 0% de la animación la imagen esta en la posicion y tamaño original*/
+    8%{transform: scale(0.47) translate(-104%, -155%);} /* al 8% se agranda y traslada un poco a la izquierda */
+    16%{transform: scale(0.45) translate(-110%, -155%);} /* al 16% vuelve al estado original */
+    24%{transform: scale(0.47) translate(-104%, -155%);} /* al 24% se vuelve a agrandar y desplazar */
+    32%{transform: scale(0.45) translate(-110%, -155%);} /* al 32% vuelve al estado original */
+    100%{transform: scale(0.45) translate(-110%, -155%);} /* espera en ese estado hasta que se cumplan los 4 segundos*/
+    }
+     
+     .title_population h2{
+         transform: translate(20%,-80%);
+     }
+     
+     .title_population h3{
+         transform: translate(-130%,-530%);
+     }
+     
+     /* reacomodando titulo de actividades */
+
+     .title_activities img{
+         display: none;
+     }
+     
+     #explore{
+         display: block;
+         transform: translate(-50%,-130%) scale(0.65);
+     }
+     
+     .title_activities p{
+         transform: translate(-50%,-160%) scale(0.85);
+     }
+     
+     /* reacomodando botones de actividades */
+     
+     #hauptbahnhof{
+         transform: translate(-120%,-0%) scale(0.7);
+         display: block;
+     }
+     
+     #hauptbahnhof:hover{
+         transform: translate(-120%,-0%) scale(0.75);
+     }
+     
+     #oper{
+         transform: translate(-50%,-10%) scale(0.7);
+         display: block;
+     }
+     
+     #oper:hover{
+         transform: translate(-50%,-10%) scale(0.75);
+     }
+     
+     #tower{
+         transform: translate(60%,-20%) scale(0.7);
+         display: block;
+     }
+     
+     #tower:hover{
+         transform: translate(60%,-20%) scale(0.75);
+     }
+     
+    #romer{
+         transform: translate(-120%,70%) scale(0.7);
+         display: block;
+     }
+     
+     #romer:hover{
+         transform: translate(-120%,70%) scale(0.75);
+     }
+     
+     #museum{
+         transform: translate(-50%,70%) scale(0.7);
+         display: block;
+     }
+     
+     #museum:hover{
+         transform: translate(-50%,70%) scale(0.75);
+     }
+     
+     #steg{
+         transform: translate(28%,60%) scale(0.7);
+         display: block;
+     }
+     
+     #steg:hover{
+         transform: translate(28%,60%) scale(0.75);
+     }
+     
+     #zoo{
+         transform: translate(-50%,150%) scale(0.7);
+         display: block;
+     }
+     
+     #zoo:hover{
+         transform: translate(-50%,150%) scale(0.75);
+     }
+     
+     /* reubicando imagen linea de tiempo */
+    .title_history img{
+        position: absolute;
+        top: 425px;
+        left: 50%;
+        transform: translate(-30%,-180%) rotate(90deg) scale(0.8);
+    }
+
+    /* se ubica y escala titulo de portada*/
+    #explora{
+        transform: translate(-65%,-140%) scale(0.4) rotate(0deg);
+    }
+
+
+    /* estilo texto indicativo, se ubica y da tamaño deseado*/
+    #indicacion{
+        width: 30%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-100%,-650%);
+    }
+     
+     /* se corrige el estilo de los botones izquierdos de la linea de tiempo*/
+    .title_history a{
+    left:0;
+     }
+     
+
+    /* ------------------- Se ubica el div para cada uno de los botones ------------------------------ */
+    .content-1{
+        transform: translate(130%,-325%);
+    }
+
+    .content-2{
+        transform: translate(10%,-220%);
+    }
+
+    .content-3{
+        transform: translate(130%,-150%);
+    }
+
+    .content-4{
+        transform: translate(10%,-40%);
+    }
+
+    .content-5{
+        transform: translate(130%,-45%);
+    }
+
+    .content-6{
+        transform: translate(10%,80%);
+    }
+
+    .content-7{
+        transform: translate(130%,55%);
+    }
+
+    .content-8{
+        transform: translate(10%,160%);
+    }
+
+    .content-9{
+        transform: translate(130%,125%);
+    }
+     
+    .content-2 a, .content-4 a, .content-6 a, .content-8 a{
+        left: auto;
+        right: 0;
+    }
+     
+     /* reubicando botones del menu de referencias */
+     
+     .menu_ref-1{
+    transform: translate(-50%,-120%) scale(0.6);
+    }
+
+    .menu_ref-2{
+        transform: translate(-50%,-30%) scale(0.6);
+    }
+    .menu_ref-3{
+        transform: translate(-50%,60%) scale(0.6);
+    }
+    
+    table{
+        margin: 0;
+    }
+    
+    .video{
+        width: 80vw;
+        height: 255px;
+        padding: 0;
+
+    }
+    
+    .video iframe{
+        transform: translate(-50%,-50%) scale(0.5);
+    }
+    
+    .title_location img:hover{
+    background-image: url(Imagenes/location2.png); /* se indica la imagen a mostrar al hacer hover */
+    background-size: 100%; /* se ajusta el tamaño para la nueva imagen */
+}
+}
+
+/* -------------------estilo para el celular -------------------*/

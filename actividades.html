@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width; initial-scale=1.0"><!-- para que ocupe la ventana del dispositivo al 100% al inicio -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta lang="es"> <!-- idioma español -->  
+        <title> Frankfurt - Actividades </title> <!-- titulo de pagina -->  
+        <meta name="author" content="Santiago Martin"> <!-- autor -->  
+        <meta name="robots" content="index, follow"> <!--  -->  
+        <meta name="keywords" content="Frankfurt, Alemania"> <!-- palabras clave para navegador -->  
+        <meta name="description" content="Sitio web sobre la actividades de de Frankfurt."> <!-- descripcion de pagina -->  
+        <link href="estilos.css" rel="stylesheet" type="text/css"> <!-- declarando hoja de estilos -->  
+    </head>
+    <body id="bg_ac"> <!-- dando identificador al body de esta pagina -->  
+    <div id="inicio"></div> <!-- vinculo para inicio de pagina -->  
+    <header class="navbar" id="navbar-header"> <!-- creando cabecera -->  
+        <div class="contenedor"> <!-- div para menu -->  
+            <h2><a href="index.html" class="home">Home</a></h2>  <!-- boton de home-->  
+            
+            <!--botones para menu de celular -->
+            <a href="#navbar-header" class="navbar-menu-mobile open"><img src="iconos/open.png" width="40px"/></a>
+            <a href="#" class="navbar-menu-mobile close"><img src="iconos/close.png" width="40px"/></a>
+        </div>
+            <!-- ----------------------- Menu ----------------------------------- -->
+            <nav class  ="menu">                
+                <a href="ubicacion.html">Ubicación</a>
+                <a href="poblacion.html">Población</a>
+                <a href="actividades.html">Actividades</a>
+                <a href="historia.html">Historia</a>
+                <a href="referencias.html">Referencias</a>
+             </nav>     
+            <!-- ----------------------- Menu ----------------------------------- -->
+          
+	</header>
+        
+    <div class="title_activities"> <!-- div para portada -->
+        <img src="Imagenes/actividades_mapa.png"> <!-- insertando imagen de mapa -->
+        
+        <img id="explore" src="Imagenes/explora.png" width="440px"> <!-- insertando imagen de titulo -->   
+        
+        <p>Haz click en la actividad que quieras ver.</p> <!--insertando titulo con indicación -->
+        
+        <!--------------- Botones de Navegación para cada actividad --------------->
+        <!-- Cada boton se crea con un identificador propio, un vinculo a la seccion respectiva y con una imagén vacia-->
+        <a href="#hauptbahnhof-info">
+            <img id="hauptbahnhof" src="iconos/empty.png"/>
+        </a>
+        <a href="#oper-info">
+            <img id="oper" src="iconos/empty.png"/>
+        </a>
+        <a href="#museum-info">
+            <img id="museum" src="iconos/empty.png"/>
+        </a>
+        <a href="#steg-info">
+            <img id="steg" src="iconos/empty.png"/>
+        </a>
+        <a href="#romer-info">
+            <img id="romer" src="iconos/empty.png"/>
+        </a>
+        <a href="#tower-info">
+            <img id="tower" src="iconos/empty.png"/>
+        </a>
+        <a href="#zoo-info">
+            <img id="zoo" src="iconos/empty.png"/>
+        </a>
+        <!--------------- Botones de Navegación para cada actividad ------------------>
+    </div>
+        
+        
+    <!-- creando seccion para más contenido -->
+        
+    <!------------------------------------------ Seccion para cada actividad --------------------------------------------->
+    <a name="hauptbahnhof-info"></a> <!-- Vinculo para la actividad respectiva actividad -->
+    <section class="info-historia-1"> <!-- Se crea la sección para cada actividad, se usa el mismo estilo que en la pagina de historia -->
+        <table> <!-- se crea una tabla para organizar el contenido -->
+            <tr>
+                <td>
+                    <!-- Columna con titulo y texto -->
+                    <h2>Frankfurt Hauptbahnhof.</h2>
+                    <p> La Estación Central de Frankfurt es la mayor estación de ferrocarril de Frankfurt am Main y una de las principales de Alemania. Constituye un nudo de comunicaciones de la ciudad, tanto con la red del U-Bahn y S-Bahn. Con 350.000 viajeros por día y 130 millones de viajeros cada año, es una de las estaciones de ferrocarril más grandes de Alemania y de Europa.</p>
+                    <a href="#inicio">Volver</a>
+                </td>
+                <td>
+                    <!-- Columna con Imagen-->
+                    <img src="Imagenes/Hauptbahnhof_Frankfurt.jpg"/>
+                </td>
+            </tr>
+        </table>
+    </section>
+    <!-- Se repite el mismo procedimiento para las demas actividades -->   
+    <a name="oper-info" id="jump-ref"></a>
+    <section class="info-historia-2">
+        <table>
+            <tr>
+                <td>
+                    <h2>Die alte Oper.</h2>
+                    <p> La Alte Oper (Ópera Antigua) es una sala de conciertos y antiguo teatro de ópera de Fráncfort del Meno, Alemania. Prácticamente destruida durante los bombardeos de la Segunda Guerra Mundial en 1944, sus ruinas estuvieron a punto de desaparecer y ser reemplazadas por un edificio moderno. En el año 1965 el alcalde Rudi Arndt sugirió, volar el edificio "con un poco de dinamita", y así consiguió su apodo de "Dinamita Rudi". Arndt insistió más tarde que nunca había propuesto seriamente una voladura. Una campaña de los ciudadanos la salvó y la reconstrucción comenzó en 1976. Fue reabierta en 1981 con la Octava Sinfonía de Gustav Mahler dirigida por Michael Gielen.</p>
+                    <a href="#inicio">Volver</a>
+                </td>
+                <td>
+                    <img src="Imagenes/Alteoper_ffm.jpg"/>
+                </td>
+            </tr>
+        </table>
+    </section>
+    <a name="tower-info" id="jump-ref"></a>
+    <section class="info-historia-2">  
+        <table>
+            <tr>
+                <td>
+                    <h2>MAIN TOWER.</h2>
+                    <p> La Main Tower es un rascacielos en el centro de la ciudad de Frankfurt am Main . Fue inaugurado el 28 de enero de 2000. Con una altura de 200 metros (con mástil: 240 metros), es junto con la Torre 185 el cuarto rascacielos más alto de Alemania, es especialmente atractivo ya que cuenta con un observador en la terraza desde donde se ve toda la ciudad.</p>
+                    <a href="#inicio">Volver</a>
+                </td>
+                <td>
+                    <img src="Imagenes/terraza.jpg"/>
+                </td>
+            </tr>
+        </table>
+    </section>
+    <a name="museum-info" id="jump-ref"></a>
+    <section class="info-historia-2">
+        <table>
+            <tr>
+                <td>
+                    <h2>Museumufer.</h2>
+                    <p> La Orilla de los Museos (en alemán, Museumsufer) en Fráncfort del Meno constituye una de las zonas museísticas más significativas de Alemania y Europa. En las dos riberas del Meno se pueden encontrar 15 museos de primer nivel.</p>
+                    <a href="#inicio">Volver</a>
+                </td>
+                <td>
+                    <img src="Imagenes/stadel.jpg"/>
+                </td>
+            </tr>
+        </table>
+    </section>
+    <a name="romer-info" id="jump-ref"></a>
+    <section class="info-historia-2">
+        <table>
+            <tr>
+                <td>
+                    <h2>Romerberg.</h2>
+                    <p> El Römerberg es la plaza del ayuntamiento de Frankfurt am Main y ha sido el centro del casco antiguo desde la Alta Edad Media . El nombre proviene de la casa Zum Römer , que ha sido el ayuntamiento de Frankfurt desde el siglo XV. Desde entonces, la plaza ha sido escenario de numerosos eventos, por ejemplo, las coronaciones de los emperadores , las ferias comerciales de Frankfurt y el mercado navideño de Frankfurt .</p>
+                    <a href="#inicio">Volver</a>
+                </td>
+                <td>
+                    <img src="Imagenes/romerberg.jpg"/>
+                </td>
+            </tr>
+        </table>
+    </section>
+    <a name="steg-info" id="jump-ref"></a>
+    <section class="info-historia-2">
+        <table>
+            <tr>
+                <td>
+                    <h2>Eiserner Steg.</h2>
+                    <p> El Eiserner Steg es un puente peatonal sobre el Main en Frankfurt, que existe desde 1868. Después de la demolición en los últimos días de la Segunda Guerra Mundial , se reconstruyó sin cambios en 1946. Al igual que en otros puentes del mundo las parejas van a este sitio para colocar un candado en simbolo de su amor.</p>
+                    <a href="#inicio">Volver</a>
+                </td>
+                <td>
+                    <img src="Imagenes/steg1.jpg"/>
+                </td>
+            </tr>
+        </table>
+    </section>
+        <section class="info-historia-2">
+        <div id="zoo-info"></div>
+        <table>
+            <tr>
+                <td>
+                    <h2>Zoo Frankfurt.</h2>
+                    <p> El Zoológico de Frankfurt fue inaugurado en Frankfurt am Main en 1858 y es el segundo zoológico más antiguo de Alemania después del Jardín Zoológico de Berlín.</p>
+                    <a href="#inicio">Volver</a>
+                </td>
+                <td>
+                    <img src="Imagenes/zoo.jpg"/>
+                </td>
+            </tr>
+        </table>
+    </section>
+    <!---------------------------------------------- Sección para cada actividad ------------------------------------------>
+    
+    <!-- Pie de Pagina -->
+    <footer>
+        <h6>&copy; Santiago Martin 2020</h6><!-- texto pequeño con caracter especial -->
+    </footer>
+    
+    </body>   
+</html>

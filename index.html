@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width; initial-scale=1.0"><!-- para que ocupe la ventana del dispositivo al 100% al inicio -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta lang="es">
+        <title> Frankfurt - Inicio </title>
+        <meta name="author" content="Santiago Martin"> <!-- autor --> 
+        <meta name="description" content="Sitio web sobre la ciudad alemana de Frankfurt."> <!-- descripción de la pagina --> 
+        <link href="estilos.css" rel="stylesheet" type="text/css"> <!-- declarando hoja de estilos --> 
+    </head>
+    <body>
+    <header class="navbar" id="navbar-header"> <!-- creando cabecera -->  
+        <div class="contenedor"> <!-- div para menu -->  
+            <h2><a href="index.html" class="home">Home</a></h2>  <!-- boton de home-->  
+            
+            <!--botones para menu de celular -->
+            <a href="#navbar-header" class="navbar-menu-mobile open"><img src="iconos/open.png" width="40px"/></a>
+            <a href="#" class="navbar-menu-mobile close"><img src="iconos/close.png" width="40px"/></a>
+        </div>
+            <!-- ----------------------- Menu ----------------------------------- -->
+            <nav class  ="menu">                
+                <a href="ubicacion.html">Ubicación</a>
+                <a href="poblacion.html">Población</a>
+                <a href="actividades.html">Actividades</a>
+                <a href="historia.html">Historia</a>
+                <a href="referencias.html">Referencias</a>
+             </nav>     
+            <!-- ----------------------- Menu ----------------------------------- -->
+          
+	</header>
+    
+    <div class="title"> <!-- creando div para portada --> 
+        <img src="Imagenes/titulo-02.png"/> <!-- insertando imagen con titulo --> 
+        
+        <!-------------------- Creando Botones de navegación secundarios --------------> 
+        <a href="ubicacion.html"> <!-- cada boton envia a cada una de las paginas y se crea usando una imagen vacia -->  
+            <img id="ubicacion" src="iconos/empty.png" width="75px" height="75px"/>
+        </a>
+        <a href="poblacion.html">
+            <img id="poblacion" src="iconos/empty.png" width="75px" height="75px"/>
+        </a>
+        <a href="actividades.html">
+            <img id="actividades" src="iconos/empty.png" width="75px" height="75px"/>
+        </a>
+        <a href="historia.html">
+            <img id="historia" src="iconos/empty.png" width="75px" height="75px"/>
+        </a>
+        <a href="referencias.html">
+            <img id="referencias" src="iconos/empty.png" width="75px" height="75px"/>
+        </a>
+        <!-------------------- Creando Botones de navegación secundarios --------------> 
+    </div>
+     
+    
+   <!-- creando boton de ver más -->  
+    <a href="#mas"> 
+        <img class="more" src="iconos/VerMas.png" width="130px" height="115px"/>    
+    </a>
+    
+    <!-- Creando sección con más contenido (video) -->  
+    <section class="video">
+    <a name="mas"></a> <!-- vinculo para ver mas -->  
+    <!-- insertando video -->  
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/UQgcBiAztjs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+        
+    <!-- Pie de pagina -->  
+    
+    <footer>         
+        <h6>&copy; Santiago Martin 2020</h6><!-- texto pequeño con caracter especial -->         
+    </footer>
+    </body>
+
+</html>
